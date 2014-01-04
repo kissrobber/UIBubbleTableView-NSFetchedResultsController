@@ -8,14 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		29C4089218785E4500275896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C4089118785E4400275896 /* Foundation.framework */; };
-		29C4089718785E4500275896 /* FRCBubbleTable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 29C4089618785E4500275896 /* FRCBubbleTable.h */; };
-		29C4089918785E4500275896 /* FRCBubbleTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C4089818785E4500275896 /* FRCBubbleTable.m */; };
 		29C408A018785E4500275896 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C4089F18785E4500275896 /* XCTest.framework */; };
 		29C408A118785E4500275896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C4089118785E4400275896 /* Foundation.framework */; };
 		29C408A318785E4500275896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C408A218785E4500275896 /* UIKit.framework */; };
 		29C408A618785E4500275896 /* libFRCBubbleTable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C4088E18785E4400275896 /* libFRCBubbleTable.a */; };
 		29C408AC18785E4500275896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 29C408AA18785E4500275896 /* InfoPlist.strings */; };
 		29C408AE18785E4500275896 /* FRCBubbleTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C408AD18785E4500275896 /* FRCBubbleTableTests.m */; };
+		29C408BD18785E9700275896 /* FRCBubbleTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C408B818785E9600275896 /* FRCBubbleTableView.m */; };
+		29C408BE18785E9700275896 /* FRCBubbleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C408BA18785E9700275896 /* FRCBubbleTableViewCell.m */; };
+		29C408BF18785E9700275896 /* NSBubbleData+FRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C408BC18785E9700275896 /* NSBubbleData+FRC.m */; };
+		29C408D818785F2100275896 /* bubbleMine.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C408C218785F2100275896 /* bubbleMine.png */; };
+		29C408D918785F2100275896 /* bubbleMine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C408C318785F2100275896 /* bubbleMine@2x.png */; };
+		29C408DA18785F2100275896 /* bubbleSomeone.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C408C418785F2100275896 /* bubbleSomeone.png */; };
+		29C408DB18785F2100275896 /* bubbleSomeone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C408C518785F2100275896 /* bubbleSomeone@2x.png */; };
+		29C408DC18785F2100275896 /* missingAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C408C618785F2100275896 /* missingAvatar.png */; };
+		29C408DD18785F2100275896 /* missingAvatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C408C718785F2100275896 /* missingAvatar@2x.png */; };
+		29C408DE18785F2100275896 /* typingMine.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C408C818785F2100275896 /* typingMine.png */; };
+		29C408DF18785F2100275896 /* typingMine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C408C918785F2100275896 /* typingMine@2x.png */; };
+		29C408E018785F2100275896 /* typingSomeone.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C408CA18785F2100275896 /* typingSomeone.png */; };
+		29C408E118785F2100275896 /* typingSomeone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C408CB18785F2100275896 /* typingSomeone@2x.png */; };
+		29C408E218785F2100275896 /* NSBubbleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C408CE18785F2100275896 /* NSBubbleData.m */; };
+		29C408E318785F2100275896 /* UIBubbleHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C408D018785F2100275896 /* UIBubbleHeaderTableViewCell.m */; };
+		29C408E418785F2100275896 /* UIBubbleTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C408D218785F2100275896 /* UIBubbleTableView.m */; };
+		29C408E518785F2100275896 /* UIBubbleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C408D418785F2100275896 /* UIBubbleTableViewCell.m */; };
+		29C408E618785F2100275896 /* UIBubbleTypingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C408D718785F2100275896 /* UIBubbleTypingTableViewCell.m */; };
+		29C408E818785F7400275896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C408E718785F7400275896 /* UIKit.framework */; };
+		29C408EA18785F7B00275896 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C408E918785F7B00275896 /* CoreData.framework */; };
+		ADDF5F3724C641F7BEF59493 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA957FD8739442DAB1AA240 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,24 +54,54 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				29C4089718785E4500275896 /* FRCBubbleTable.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04927CCE75DF4BD7B7264860 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		29C4088E18785E4400275896 /* libFRCBubbleTable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFRCBubbleTable.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C4089118785E4400275896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		29C4089518785E4500275896 /* FRCBubbleTable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FRCBubbleTable-Prefix.pch"; sourceTree = "<group>"; };
-		29C4089618785E4500275896 /* FRCBubbleTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRCBubbleTable.h; sourceTree = "<group>"; };
-		29C4089818785E4500275896 /* FRCBubbleTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRCBubbleTable.m; sourceTree = "<group>"; };
 		29C4089E18785E4500275896 /* FRCBubbleTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRCBubbleTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C4089F18785E4500275896 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		29C408A218785E4500275896 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		29C408A918785E4500275896 /* FRCBubbleTableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FRCBubbleTableTests-Info.plist"; sourceTree = "<group>"; };
 		29C408AB18785E4500275896 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		29C408AD18785E4500275896 /* FRCBubbleTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRCBubbleTableTests.m; sourceTree = "<group>"; };
+		29C408B718785E9600275896 /* FRCBubbleTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCBubbleTableView.h; sourceTree = "<group>"; };
+		29C408B818785E9600275896 /* FRCBubbleTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCBubbleTableView.m; sourceTree = "<group>"; };
+		29C408B918785E9600275896 /* FRCBubbleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCBubbleTableViewCell.h; sourceTree = "<group>"; };
+		29C408BA18785E9700275896 /* FRCBubbleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCBubbleTableViewCell.m; sourceTree = "<group>"; };
+		29C408BB18785E9700275896 /* NSBubbleData+FRC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBubbleData+FRC.h"; sourceTree = "<group>"; };
+		29C408BC18785E9700275896 /* NSBubbleData+FRC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBubbleData+FRC.m"; sourceTree = "<group>"; };
+		29C408C218785F2100275896 /* bubbleMine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbleMine.png; sourceTree = "<group>"; };
+		29C408C318785F2100275896 /* bubbleMine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubbleMine@2x.png"; sourceTree = "<group>"; };
+		29C408C418785F2100275896 /* bubbleSomeone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbleSomeone.png; sourceTree = "<group>"; };
+		29C408C518785F2100275896 /* bubbleSomeone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubbleSomeone@2x.png"; sourceTree = "<group>"; };
+		29C408C618785F2100275896 /* missingAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = missingAvatar.png; sourceTree = "<group>"; };
+		29C408C718785F2100275896 /* missingAvatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "missingAvatar@2x.png"; sourceTree = "<group>"; };
+		29C408C818785F2100275896 /* typingMine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = typingMine.png; sourceTree = "<group>"; };
+		29C408C918785F2100275896 /* typingMine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "typingMine@2x.png"; sourceTree = "<group>"; };
+		29C408CA18785F2100275896 /* typingSomeone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = typingSomeone.png; sourceTree = "<group>"; };
+		29C408CB18785F2100275896 /* typingSomeone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "typingSomeone@2x.png"; sourceTree = "<group>"; };
+		29C408CD18785F2100275896 /* NSBubbleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSBubbleData.h; sourceTree = "<group>"; };
+		29C408CE18785F2100275896 /* NSBubbleData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSBubbleData.m; sourceTree = "<group>"; };
+		29C408CF18785F2100275896 /* UIBubbleHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBubbleHeaderTableViewCell.h; sourceTree = "<group>"; };
+		29C408D018785F2100275896 /* UIBubbleHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBubbleHeaderTableViewCell.m; sourceTree = "<group>"; };
+		29C408D118785F2100275896 /* UIBubbleTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBubbleTableView.h; sourceTree = "<group>"; };
+		29C408D218785F2100275896 /* UIBubbleTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBubbleTableView.m; sourceTree = "<group>"; };
+		29C408D318785F2100275896 /* UIBubbleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBubbleTableViewCell.h; sourceTree = "<group>"; };
+		29C408D418785F2100275896 /* UIBubbleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBubbleTableViewCell.m; sourceTree = "<group>"; };
+		29C408D518785F2100275896 /* UIBubbleTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBubbleTableViewDataSource.h; sourceTree = "<group>"; };
+		29C408D618785F2100275896 /* UIBubbleTypingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBubbleTypingTableViewCell.h; sourceTree = "<group>"; };
+		29C408D718785F2100275896 /* UIBubbleTypingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBubbleTypingTableViewCell.m; sourceTree = "<group>"; };
+		29C408E718785F7400275896 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		29C408E918785F7B00275896 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		29C408EB187864D000275896 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		29C408EC1878651400275896 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		4AA957FD8739442DAB1AA240 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +109,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C408EA18785F7B00275896 /* CoreData.framework in Frameworks */,
+				29C408E818785F7400275896 /* UIKit.framework in Frameworks */,
 				29C4089218785E4500275896 /* Foundation.framework in Frameworks */,
+				ADDF5F3724C641F7BEF59493 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +133,13 @@
 		29C4088518785E4400275896 = {
 			isa = PBXGroup;
 			children = (
+				29C408EC1878651400275896 /* README.md */,
+				29C408EB187864D000275896 /* LICENSE */,
 				29C4089318785E4500275896 /* FRCBubbleTable */,
 				29C408A718785E4500275896 /* FRCBubbleTableTests */,
 				29C4089018785E4400275896 /* Frameworks */,
 				29C4088F18785E4400275896 /* Products */,
+				04927CCE75DF4BD7B7264860 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,9 +155,12 @@
 		29C4089018785E4400275896 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29C408E918785F7B00275896 /* CoreData.framework */,
+				29C408E718785F7400275896 /* UIKit.framework */,
 				29C4089118785E4400275896 /* Foundation.framework */,
 				29C4089F18785E4500275896 /* XCTest.framework */,
 				29C408A218785E4500275896 /* UIKit.framework */,
+				4AA957FD8739442DAB1AA240 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,8 +168,13 @@
 		29C4089318785E4500275896 /* FRCBubbleTable */ = {
 			isa = PBXGroup;
 			children = (
-				29C4089618785E4500275896 /* FRCBubbleTable.h */,
-				29C4089818785E4500275896 /* FRCBubbleTable.m */,
+				29C408C018785F2100275896 /* UIBubbleTableView */,
+				29C408B718785E9600275896 /* FRCBubbleTableView.h */,
+				29C408B818785E9600275896 /* FRCBubbleTableView.m */,
+				29C408B918785E9600275896 /* FRCBubbleTableViewCell.h */,
+				29C408BA18785E9700275896 /* FRCBubbleTableViewCell.m */,
+				29C408BB18785E9700275896 /* NSBubbleData+FRC.h */,
+				29C408BC18785E9700275896 /* NSBubbleData+FRC.m */,
 				29C4089418785E4500275896 /* Supporting Files */,
 			);
 			path = FRCBubbleTable;
@@ -143,6 +206,50 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		29C408C018785F2100275896 /* UIBubbleTableView */ = {
+			isa = PBXGroup;
+			children = (
+				29C408C118785F2100275896 /* images */,
+				29C408CC18785F2100275896 /* src */,
+			);
+			path = UIBubbleTableView;
+			sourceTree = "<group>";
+		};
+		29C408C118785F2100275896 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				29C408C218785F2100275896 /* bubbleMine.png */,
+				29C408C318785F2100275896 /* bubbleMine@2x.png */,
+				29C408C418785F2100275896 /* bubbleSomeone.png */,
+				29C408C518785F2100275896 /* bubbleSomeone@2x.png */,
+				29C408C618785F2100275896 /* missingAvatar.png */,
+				29C408C718785F2100275896 /* missingAvatar@2x.png */,
+				29C408C818785F2100275896 /* typingMine.png */,
+				29C408C918785F2100275896 /* typingMine@2x.png */,
+				29C408CA18785F2100275896 /* typingSomeone.png */,
+				29C408CB18785F2100275896 /* typingSomeone@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		29C408CC18785F2100275896 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				29C408CD18785F2100275896 /* NSBubbleData.h */,
+				29C408CE18785F2100275896 /* NSBubbleData.m */,
+				29C408CF18785F2100275896 /* UIBubbleHeaderTableViewCell.h */,
+				29C408D018785F2100275896 /* UIBubbleHeaderTableViewCell.m */,
+				29C408D118785F2100275896 /* UIBubbleTableView.h */,
+				29C408D218785F2100275896 /* UIBubbleTableView.m */,
+				29C408D318785F2100275896 /* UIBubbleTableViewCell.h */,
+				29C408D418785F2100275896 /* UIBubbleTableViewCell.m */,
+				29C408D518785F2100275896 /* UIBubbleTableViewDataSource.h */,
+				29C408D618785F2100275896 /* UIBubbleTypingTableViewCell.h */,
+				29C408D718785F2100275896 /* UIBubbleTypingTableViewCell.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +257,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29C408B118785E4500275896 /* Build configuration list for PBXNativeTarget "FRCBubbleTable" */;
 			buildPhases = (
+				44849EABB15B4C02AD56E143 /* Check Pods Manifest.lock */,
 				29C4088A18785E4400275896 /* Sources */,
 				29C4088B18785E4400275896 /* Frameworks */,
 				29C4088C18785E4400275896 /* CopyFiles */,
+				44AC94461CB8453D9E325613 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,18 +321,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C408DB18785F2100275896 /* bubbleSomeone@2x.png in Resources */,
+				29C408E018785F2100275896 /* typingSomeone.png in Resources */,
+				29C408D818785F2100275896 /* bubbleMine.png in Resources */,
+				29C408D918785F2100275896 /* bubbleMine@2x.png in Resources */,
+				29C408DF18785F2100275896 /* typingMine@2x.png in Resources */,
+				29C408DC18785F2100275896 /* missingAvatar.png in Resources */,
+				29C408DA18785F2100275896 /* bubbleSomeone.png in Resources */,
+				29C408E118785F2100275896 /* typingSomeone@2x.png in Resources */,
+				29C408DE18785F2100275896 /* typingMine.png in Resources */,
+				29C408DD18785F2100275896 /* missingAvatar@2x.png in Resources */,
 				29C408AC18785E4500275896 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		44849EABB15B4C02AD56E143 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		44AC94461CB8453D9E325613 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		29C4088A18785E4400275896 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29C4089918785E4500275896 /* FRCBubbleTable.m in Sources */,
+				29C408BD18785E9700275896 /* FRCBubbleTableView.m in Sources */,
+				29C408BF18785E9700275896 /* NSBubbleData+FRC.m in Sources */,
+				29C408BE18785E9700275896 /* FRCBubbleTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +385,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C408E518785F2100275896 /* UIBubbleTableViewCell.m in Sources */,
+				29C408E318785F2100275896 /* UIBubbleHeaderTableViewCell.m in Sources */,
+				29C408E218785F2100275896 /* NSBubbleData.m in Sources */,
 				29C408AE18785E4500275896 /* FRCBubbleTableTests.m in Sources */,
+				29C408E618785F2100275896 /* UIBubbleTypingTableViewCell.m in Sources */,
+				29C408E418785F2100275896 /* UIBubbleTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +488,7 @@
 		};
 		29C408B218785E4500275896 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04927CCE75DF4BD7B7264860 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/FRCBubbleTable.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -341,6 +501,7 @@
 		};
 		29C408B318785E4500275896 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04927CCE75DF4BD7B7264860 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/FRCBubbleTable.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -408,6 +569,7 @@
 				29C408B318785E4500275896 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29C408B418785E4500275896 /* Build configuration list for PBXNativeTarget "FRCBubbleTableTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +578,7 @@
 				29C408B618785E4500275896 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
