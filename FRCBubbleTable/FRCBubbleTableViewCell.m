@@ -1,14 +1,13 @@
 #import "FRCBubbleTableViewCell.h"
 #import "NSBubbleData+FRC.h"
-
 #import <SDWebImage/UIImageView+WebCache.h>
 
 @interface UIBubbleTableViewCell()
 
 - (void) setupInternalData;
-@property (nonatomic, retain) UIView *customView;
-@property (nonatomic, retain) UIImageView *bubbleImage;
-@property (nonatomic, retain) UIImageView *avatarImage;
+@property (nonatomic) UIView *customView;
+@property (nonatomic) UIImageView *bubbleImage;
+@property (nonatomic) UIImageView *avatarImage;
 
 @end
 
@@ -41,7 +40,7 @@
     {
         [self.avatarImage removeFromSuperview];
         
-        //        self.avatarImage = [[UIImageView alloc] initWithImage:(self.data.avatarUrl ? self.data.avatarUrl : [UIImage imageNamed:@"missingAvatar.png"])];
+        self.avatarImage = [[UIImageView alloc] init];
         [self.avatarImage setImageWithURL:[NSURL URLWithString:self.data.avatarUrl]
                          placeholderImage:[UIImage imageNamed:@"missingAvatar.png"]];
         
@@ -117,11 +116,11 @@
         [self addSubview:_dateLabel];
         
     }
-
+    
     _dateLabel.frame = CGRectMake(_dateLabel.frame.origin.x,
                                   self.customView.frame.origin.y + self.customView.frame.size.height + (self.data.showRead ? 15 : 0),
-                              _dateLabel.frame.size.width,
-                            _dateLabel.frame.size.height);
+                                  _dateLabel.frame.size.width,
+                                  _dateLabel.frame.size.height);
 }
 
 - (void)hideDate{

@@ -2,7 +2,7 @@
 
 #import "UIBubbleTableView.h"
 #import "UIBubbleTableViewCell.h"
-#import "NSBubbleData.h"
+#import "NSBubbleData+FRC.h"
 
 typedef NSBubbleData* (^FRCBubbleTableConverterBlock)(id);
 

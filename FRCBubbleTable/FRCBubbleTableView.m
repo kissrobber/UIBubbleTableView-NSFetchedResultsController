@@ -6,9 +6,9 @@
 
 @property (nonatomic) BOOL showAvatars;
 @property (nonatomic) int snapInterval;
-@property (nonatomic, assign) FRCBubbleTableConverterBlock converter;
-@property (nonatomic, assign) NSFetchRequest *fetchRequest;
-@property (nonatomic, assign) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, copy) FRCBubbleTableConverterBlock converter;
+@property (nonatomic) NSFetchRequest *fetchRequest;
+@property (nonatomic) NSManagedObjectContext *managedObjectContext;
 
 @end
 
@@ -62,7 +62,7 @@
     self.converter = converter;
     self.fetchRequest = fetchRequest;
     self.managedObjectContext = managedObjectContext;
-
+    
     _fetchedResultsController = [self fetchedResultsController];
     NSError *error;
 	if (![_fetchedResultsController performFetch:&error]) {
@@ -99,30 +99,19 @@
         NSBubbleData *preMessage = self.converter([_fetchedResultsController objectAtIndexPath:[NSIndexPath indexPathForRow:indexPath.row - 1 inSection:indexPath.section]]);
         data.groupTop = [data.date timeIntervalSinceDate:preMessage.date] > self.snapInterval;
         
-        if(data.type == BubbleTypeMine){
-            BOOL read;
-            if(indexPath.row == [self numberOfMessages] - 1){
-                read = data.read;
-            } else {
-                NSBubbleData *nextMessage = nil;
-                long idx = indexPath.row;
-                do {
-                    nextMessage = self.converter([_fetchedResultsController objectAtIndexPath:[NSIndexPath indexPathForRow:idx + 1 inSection:indexPath.section]]);
-                    if(nextMessage.type == BubbleTypeSomeoneElse){
-                        nextMessage = nil;
-                    }
-                    idx++;
-                } while (nextMessage == nil && idx < [self numberOfMessages] - 1);
-                
-                read = (nextMessage == nil || (nextMessage != nil && !nextMessage.read)) && data.read;
-            }
-            data.showRead = read;
+        BOOL read;
+        if(indexPath.row == [self numberOfMessages] - 1){
+            read = data.read;
+        } else {
+            NSBubbleData *nextMessage = self.converter([_fetchedResultsController objectAtIndexPath:[NSIndexPath indexPathForRow:indexPath.row + 1 inSection:indexPath.section]]);
+            read = !nextMessage.read && data.read;
         }
+        data.showRead = read;
     }
     return data;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (float)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSBubbleData *data = [self dataForRowAtIndexPath:indexPath];;
     return [data heightForSelf];
@@ -154,6 +143,7 @@
 }
 
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
+    [UIView setAnimationsEnabled:NO];
     [self beginUpdates];
 }
 
@@ -169,12 +159,13 @@
             break;
         case NSFetchedResultsChangeUpdate:
             [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+            //            [self configureCell:[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
             break;
         case NSFetchedResultsChangeMove:
             [tableView deleteRowsAtIndexPaths:[NSArray
-                                               arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+                                               arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationNone];
             [tableView insertRowsAtIndexPaths:[NSArray
-                                               arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+                                               arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationNone];
             break;
     }
 }
@@ -182,19 +173,20 @@
 - (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id )sectionInfo atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type {
     switch(type) {
         case NSFetchedResultsChangeInsert:
-            [self insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+            [self insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationNone];
             break;
         case NSFetchedResultsChangeDelete:
-            [self deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+            [self deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationNone];
             break;
     }
 }
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
     [self endUpdates];
+    [UIView setAnimationsEnabled:YES];
 }
 
-- (unsigned long)numberOfMessages
+- (unsigned int)numberOfMessages
 {
     id  sectionInfo = [[_fetchedResultsController sections] objectAtIndex:0];
     return [sectionInfo numberOfObjects];

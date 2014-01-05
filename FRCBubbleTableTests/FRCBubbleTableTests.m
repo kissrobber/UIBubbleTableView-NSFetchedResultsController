@@ -1,11 +1,3 @@
-//
-//  FRCBubbleTableTests.m
-//  FRCBubbleTableTests
-//
-//  Created by keiji matsumoto on 2014/01/05.
-//
-//
-
 #import <XCTest/XCTest.h>
 
 @interface FRCBubbleTableTests : XCTestCase
